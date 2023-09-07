@@ -1,0 +1,353 @@
+on player fish:
+   if "%fishing state%" is "CAUGHT_FISH":
+      # Overall Chance of obtaining loot (overall * loot percentage)
+      chance of 50%:
+         # Crate Keys Loot Tables
+         chance of 0.25%:
+            execute console command "/cc give physical CommonCrate 1 %player%"
+            send player title "&b&lFishing:" with subtitle "&dYou fished up a key! Nice!"
+         chance of 0.12%:
+            execute console command "/cc give physical RareCrate 1 %player%"
+            send player title "&b&lFishing:" with subtitle "&dYou fished up a key! Nice!"
+         chance of 0.05%:
+            execute console command "/cc give physical EpicCrate 1 %player%"
+            send player title "&b&lFishing:" with subtitle "&dYou fished up a key! Nice!"
+         chance of 0.02%:
+            execute console command "/cc give physical SuperiorCrate 1 %player%"
+            send player title "&b&lFishing:" with subtitle "&dYou fished up a key! Nice!"
+         # Coins Loot Tables
+         chance of 0.4%:
+            execute console command "/coins give %player% 10"
+            send player title "&b&lFishing:" with subtitle "&e&lCoins &8&l| &7⛁10 has been added to your bag."
+         chance of 0.3%:
+            execute console command "/coins give %player% 20"
+            send player title "&b&lFishing:" with subtitle "&e&lCoins &8&l| &7⛁20 has been added to your bag."
+         chance of 0.2%:
+            execute console command "/coins give %player% 30"
+            send player title "&b&lFishing:" with subtitle "&e&lCoins &8&l| &7⛁30 has been added to your bag."
+         chance of 0.1%:
+            execute console command "/coins give %player% 40"
+            send player title "&b&lFishing:" with subtitle "&e&lCoins &8&l| &7⛁40 has been added to your bag."
+         # Money Loot Tables
+         chance of 4%:
+            execute console command "/eco give %player% 100"
+            send player title "&b&lFishing:" with subtitle "&2You have found money!"
+         chance of 3%:
+            execute console command "/eco give %player% 250"
+            send player title "&b&lFishing:" with subtitle "&2You have found money!"
+         chance of 2%:
+            execute console command "/eco give %player% 500"
+            send player title "&b&lFishing:" with subtitle "&2You have found money!"
+         chance of 0.75%:
+            execute console command "/eco give %player% 1000"
+            send player title "&b&lFishing:" with subtitle "&2You have found money!"
+         # Exp Loot Tables
+         chance of 4%:
+            execute console command "/exp give %player% 1l"
+            send player title "&b&lFishing:" with subtitle "&a&lExp &8&l| &7🧪1 full experience level was gained."
+         chance of 2%:
+            execute console command "/exp give %player% 1l"
+            send player title "&b&lFishing:" with subtitle "&a&lExp &8&l| &7🧪1 full experience level was gained."  
+         # Enchanted Books Loot Tables
+         chance of 0.2%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:mending,lvl:1}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:unbreaking,lvl:3}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:unbreaking,lvl:2}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:unbreaking,lvl:1}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:vanishing,lvl:1}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:aqua_affinity,lvl:1}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:blast_protection,lvl:4}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:blast_protection,lvl:3}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:blast_protection,lvl:2}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:blast_protection,lvl:1}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:binding_curse,lvl:1}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:depth_strider,lvl:3}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:depth_strider,lvl:2}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:depth_strider,lvl:1}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:protection,lvl:4}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:protection,lvl:3}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:protection,lvl:2}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:protection,lvl:1}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:respiration,lvl:3}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:respiration,lvl:2}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:respiration,lvl:1}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:bane_of_arthropods,lvl:5}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:bane_of_arthropods,lvl:4}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:bane_of_arthropods,lvl:3}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:bane_of_arthropods,lvl:2}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:bane_of_arthropods,lvl:1}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:efficiency,lvl:5}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:efficiency,lvl:4}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:efficiency,lvl:3}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:efficiency,lvl:2}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:efficiency,lvl:1}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:fire_aspect,lvl:2}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:fire_aspect,lvl:1}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:looting,lvl:3}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:impaling,lvl:5}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:impaling,lvl:4}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:impaling,lvl:3}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:impaling,lvl:2}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:impaling,lvl:1}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:knockback,lvl:2}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:sharpness,lvl:5}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:sharpness,lvl:4}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:sharpness,lvl:3}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:sharpness,lvl:2}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:sharpness,lvl:1}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:smite,lvl:3}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:channeling,lvl:1}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:flame,lvl:1}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:infinity,lvl:1}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:loyalty,lvl:3}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:loyalty,lvl:2}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:loyalty,lvl:1}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:riptide,lvl:3}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:riptide,lvl:2}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:riptide,lvl:1}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:multishot,lvl:1}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:piercing,lvl:4}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:piercing,lvl:3}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:piercing,lvl:2}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:piercing,lvl:1}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:power,lvl:5}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:power,lvl:4}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:power,lvl:3}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:power,lvl:2}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:power,lvl:1}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:punch,lvl:2}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:quick_charge,lvl:3}]} 1"
+            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
+         # Misc Items Loot Tables
+         chance of 2%:
+            execute console command "/minecraft:give %player% diamond 1"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 3%:
+            execute console command "/minecraft:give %player% emerald 2"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 4%:
+            execute console command "/minecraft:give %player% amethyst_shard 4"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 0.5%:
+            execute console command "/minecraft:give %player% enchanted_golden_apple 1"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 1%:
+            execute console command "/minecraft:give %player% golden_apple 1"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% sentry_armor_trim_smithing_template 1"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% vex_armor_trim_smithing_template 1"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% wild_armor_trim_smithing_template 1"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% coast_armor_trim_smithing_template 1"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% dune_armor_trim_smithing_template 1"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% wayfinder_armor_trim_smithing_template 1"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% raiser_armor_trim_smithing_template 1"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% shaper_armor_trim_smithing_template 1"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% host_armor_trim_smithing_template 1"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% ward_armor_trim_smithing_template 1"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% silence_armor_trim_smithing_template 1"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% tide_armor_trim_smithing_template 1"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% snout_armor_trim_smithing_template 1"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% rib_armor_trim_smithing_template 1"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% eye_armor_trim_smithing_template 1"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 0.3%:
+            execute console command "/minecraft:give %player% spire_armor_trim_smithing_template 1"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 0.8%:
+            execute console command "/minecraft:give %player% angler_pottery_sherd 1"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 1%:
+            execute console command "/minecraft:give %player% netherite_upgrade_smithing_template 1"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 0.90%:
+            execute console command "/minecraft:give %player% netherite_scrap 1"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 3%:
+            execute console command "/minecraft:give %player% quartz 8"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 2%:
+            execute console command "/minecraft:give %player% coal_block 1"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 5%:
+            execute console command "/minecraft:give %player% lily_pad 1"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 4%:
+            execute console command "/minecraft:give %player% prismarine_crystals 1"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 4%:
+            execute console command "/minecraft:give %player% prismarine_shard 1"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 4%:
+            execute console command "/minecraft:give %player% torchflower_seeds 4"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         chance of 3%:
+            execute console command "/minecraft:give %player% pitcher_pod 1"
+            send player title "&b&lFishing" with subtitle "&eYou reeled in some bonus loot!" for 5 seconds
+         # Creatures / Mob Loot Tables
+         chance of 1%:
+            execute console command "/minecraft:give %player% tadpole_bucket 1"
+            send player title "&b&lFishing" with subtitle "&6You caught a Tadpole!" for 5 seconds
+         chance of 1%:
+            execute console command "/minecraft:give %player% axolotl_bucket 1"
+            send player title "&b&lFishing" with subtitle "&6You caught an Axolotl!" for 5 seconds
