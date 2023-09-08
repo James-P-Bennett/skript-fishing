@@ -62,9 +62,6 @@ on player fish:
             execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:unbreaking,lvl:1}]} 1"
             send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
          chance of 0.3%:
-            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:vanishing,lvl:1}]} 1"
-            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
-         chance of 0.3%:
             execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:aqua_affinity,lvl:1}]} 1"
             send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
          chance of 0.3%:
@@ -78,9 +75,6 @@ on player fish:
             send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
          chance of 0.3%:
             execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:blast_protection,lvl:1}]} 1"
-            send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
-         chance of 0.3%:
-            execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:binding_curse,lvl:1}]} 1"
             send player title "&b&lFishing:" with subtitle "&5You just reeled in an Enchanted Book!" for 5 seconds
          chance of 0.3%:
             execute console command "/minecraft:give %player% enchanted_book{StoredEnchantments:[{id:depth_strider,lvl:3}]} 1"
