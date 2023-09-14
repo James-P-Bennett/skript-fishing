@@ -1,7 +1,7 @@
 on player fish:
    if "%fishing state%" is "CAUGHT_FISH":
       # Overall Chance of obtaining loot (overall * loot percentage)
-      chance of 50%:
+      chance of 25%:
          # Crate Keys Loot Tables
          chance of 0.25%:
             execute console command "/cc give physical CommonCrate 1 %player%"
